@@ -1,0 +1,72 @@
+.ba-projects__header {
+  text-align: center;
+  color: #2c4058;
+  font-family: "Gotham";
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 44px;
+  text-transform: uppercase;
+  padding-top: 129px;
+  margin-bottom: 100px;
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #2c4058;
+    position: absolute;
+    left: 50%;
+    top: 99px;
+    transform: translateX(-50%);
+  }
+}
+
+.ba-projects__img-left {
+  box-shadow: -260px -70px 0 #55b7ff;
+}
+
+.ba-projects__img-right {
+  box-shadow: 260px -70px 0 #7e5aff;
+}
+
+.ba-p-content__supscribe {
+  color: #2c4058;
+  font-family: "Gotham-Book";
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.ba-p-content__header {
+  color: #2c4058;
+  font-family: Gotham;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.ba-p-content__main {
+  margin-bottom: 40px;
+}
+
+.ba-p-content {
+  padding-top: 30px;
+
+  .ba-button {
+    margin-bottom: 60px;
+  }
+}
+
+.ba-p-content__subscribe {
+  color: #2c4058;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.ba-row--bottom {
+  margin-bottom: 140px;
+}

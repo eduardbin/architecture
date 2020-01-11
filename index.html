@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Architecture</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+	<header class="ba-header">
+		<div class="ba-container">
+			<div class="ba-header-flex">
+				<div class="ba-logo">
+					<svg width="241" height="54" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M25.24086 42.79054l16.64953-.14654-10.81076-18.50832-13.6405 24.31288-17.43917.15332L25.74735 3.83464l3.22857 5.52675L9.67069 42.92758l4.5207-.03969 16.79134-29.92986 20.55559 35.18999-28.619.25203zm42.43555 11.19834L36.36661.22477l.37041-.21879 9.88541 16.97456v-5.31693h5.18055l4.22001 7.042 4.22039-7.042h5.18103v18.19082h-4.87766V19.40744l-4.52375 7.1207h-.10071l-4.49848-7.0688v5.7658l16.62302 28.54394zm2.80733-33.17813v-.0519c0-5.2235 4.0946-9.45887 9.55324-9.45887 5.45864 0 9.50203 4.18348 9.50203 9.40663v.05224c0 5.22316-4.0946 9.45921-9.55324 9.45921-5.45855 0-9.50203-4.18382-9.50203-9.40731zm14.05134 0v-.0519c0-2.62447-1.84469-4.91176-4.54931-4.91176-2.67859 0-4.47283 2.23539-4.47283 4.85952v.05224c0 2.62481 1.84469 4.91176 4.52404 4.91176 2.70376 0 4.4981-2.23505 4.4981-4.85986zm10.08845-9.14714h4.57449l7.27816 9.61525v-9.61525h4.8521v18.19082h-4.29602l-7.55653-9.97922v9.97922h-4.8522zm26.69163 4.41753h-5.30672v-4.41753h15.51685v4.41753h-5.30682v13.77328h-4.90332zm14.99013-4.41753h4.92849v18.19082h-4.92849zm10.08587 9.14714v-.0519c0-5.30117 3.96805-9.45887 9.32512-9.45887 3.61395 0 5.93853 1.55867 7.50551 3.79373l-3.68938 2.93654c-1.01089-1.29917-2.17361-2.13092-3.86639-2.13092-2.47641 0-4.22049 2.1567-4.22049 4.80728v.05224c0 2.72894 1.74408 4.85952 4.22049 4.85952 1.84469 0 2.93093-.8833 3.99303-2.2086l3.68948 2.70249c-1.66779 2.36497-3.9176 4.1058-7.83443 4.1058-5.05428 0-9.12294-3.97588-9.12294-9.40731zm21.58633-9.14714h14.22834v4.28761h-9.37624v2.75439h8.49123v3.97622h-8.49123v2.88464h9.50203v4.28795h-14.35413zm19.38753 0h4.90332v13.77294h8.56667v4.41787h-13.46998zm18.09892 0h4.90246v13.77294h8.56752v4.41787h-13.46998zm16.48074 9.14714v-.0519c0-5.2235 4.0946-9.45887 9.55334-9.45887 5.45855 0 9.50203 4.18348 9.50203 9.40663v.05224c0 5.22316-4.0946 9.45921-9.55324 9.45921-5.45874 0-9.50212-4.18382-9.50212-9.40731zm14.05143 0v-.0519c0-2.62447-1.84469-4.91176-4.54931-4.91176-2.67859 0-4.47302 2.23539-4.47302 4.85952v.05224c0 2.62481 1.84469 4.91176 4.52423 4.91176 2.70367 0 4.4981-2.23505 4.4981-4.85986zM71.49378 39.70712h.67778v6.06067h-.67778zm5.87549 0h.63591l3.7859 4.85681v-4.85681h.66099v6.06067h-.54111l-3.8806-4.97011v4.97011h-.66109zm11.81068.63127h-2.01836v-.63127h4.72212v.63127h-2.0175v5.4294h-.68626zm7.41415-.63127h4.34456v.62279h-3.66592v2.06918h3.27911v.62313h-3.27911v2.12108h3.70874v.62449H96.5941zm9.19075 0h2.58465c.73833 0 1.33047.2249 1.70803.60583.29182.29443.46387.71879.46387 1.19436v.01696c0 1.00508-.68703 1.59361-1.63078 1.76627l1.84555 2.47725h-.83294l-1.74246-2.35547h-1.71719v2.35547h-.67873zm2.52429 3.09054c.90179 0 1.54524-.46777 1.54524-1.24626v-.01798c0-.74524-.56629-1.19504-1.53685-1.19504h-1.85394v2.45927zm7.12299-3.09054h.63591l3.7859 4.85681v-4.85681h.66099v6.06067h-.54102l-3.88069-4.97011v4.97011h-.66109zm12.44564-.04376h.63515l2.73886 6.10442h-.72975l-.70381-1.60243h-3.27082l-.71306 1.60243h-.69542zm1.67456 3.88803l-1.36576-3.09156-1.37329 3.09156zm7.13968-3.213h-2.01836v-.63127h4.72212v.63127h-2.01759v5.4294h-.68617zm7.47452-.63127h.67778v6.06067h-.67778zm5.6096 3.04712v-.01696c0-1.67163 1.24483-3.13532 3.07369-3.13532 1.82877 0 3.05605 1.44673 3.05605 3.11768v.01764c0 1.67027-1.24483 3.13362-3.07369 3.13362-1.82877 0-3.05605-1.44571-3.05605-3.11666zm5.42593 0v-.01696c0-1.37719-.99573-2.50235-2.36988-2.50235-1.37329 0-2.35214 1.1082-2.35214 2.48471v.01764c0 1.37584.99564 2.50167 2.36979 2.50167 1.37329 0 2.35224-1.1082 2.35224-2.48471zm5.5769-3.04712h.63581l3.7859 4.85681v-4.85681h.66109v6.06067h-.54102l-3.88079-4.97011v4.97011h-.66099zm12.4465-.04376h.63515l2.73886 6.10442h-.72975l-.70381-1.60243h-3.27082l-.71306 1.60243h-.69542zm1.67456 3.88803l-1.36585-3.09156-1.3732 3.09156zm6.32429-3.84427h.67873v5.4277h3.3824v.63297h-4.06113zm14.50023 3.04712v-.01696c0-1.66281 1.2105-3.13532 3.01323-3.13532 1.01328 0 1.64003.29443 2.24066.80562l-.43793.51933c-.46301-.40603-.97809-.69199-1.82791-.69199-1.33133 0-2.28434 1.13364-2.28434 2.48471v.01764c0 1.44503.91867 2.51931 2.37827 2.51931.68703 0 1.32208-.26865 1.73397-.60583V43.1433h-1.82791v-.61397h2.4806v2.41518c-.5579.50271-1.39933.92638-2.4127.92638-1.88828 0-3.05595-1.38499-3.05595-3.11666zm10.43654-3.04712h2.58465c.73814 0 1.33038.2249 1.70784.60583.29202.29443.46396.71879.46396 1.19436v.01696c0 1.00508-.68703 1.59361-1.63069 1.76627l1.84546 2.47725h-.83303l-1.74236-2.35547h-1.71719v2.35547h-.67863zm2.52418 3.09054c.90179 0 1.54524-.46777 1.54524-1.24626v-.01798c0-.74524-.5662-1.19504-1.53685-1.19504h-1.85394v2.45927zm6.85626-.04342v-.01696c0-1.67163 1.24493-3.13532 3.07369-3.13532 1.82867 0 3.05595 1.44673 3.05595 3.11768v.01764c0 1.67027-1.24483 3.13362-3.0736 3.13362-1.82877 0-3.05605-1.44571-3.05605-3.11666zm5.42593 0v-.01696c0-1.37719-.99573-2.50235-2.36988-2.50235-1.37329 0-2.35224 1.1082-2.35224 2.48471v.01764c0 1.37584.99573 2.50167 2.36988 2.50167 1.3732 0 2.35224-1.1082 2.35224-2.48471zm5.48372.47625v-3.52337h.67787v3.48029c0 1.30698.68703 2.04306 1.83716 2.04306 1.10817 0 1.81198-.67605 1.81198-1.99998v-3.52337h.67778v3.47181c0 1.76559-1.00403 2.68349-2.50654 2.68349-1.48573 0-2.49825-.9179-2.49825-2.63193zm10.04991-3.52337h2.24991c1.35641 0 2.24905.72693 2.24905 1.92196v.01696c0 1.30799-1.08213 1.98302-2.36063 1.98302h-1.45969v2.13872h-.67863zm2.16351 3.29746c.99573 0 1.64843-.53629 1.64843-1.33343v-.01662c0-.86634-.64354-1.31613-1.614-1.31613h-1.5193v2.66619z"
+							fill="#fff" /></svg>
+				</div>
+
+				<nav class="ba-nav">
+					<ul class="ba-nav__menu">
+						<li><a class="ba-nav__item" href="#">About Us</a></li>
+						<li><a class="ba-nav__item" href="#projects">projects</a></li>
+						<li><a class="ba-nav__item" href="#news">news</a></li>
+						<li><a class="ba-nav__item" href="#">contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="ba-contacts">
+					<a class="ba-contacts__logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 32 32">
+							<path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z" /></svg>
+					</a>
+
+					<a class="ba-contacts__logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 32 32">
+							<path
+								d="M32 7.075c-1.175.525-2.444.875-3.769 1.031 1.356-.813 2.394-2.1 2.887-3.631-1.269.75-2.675 1.3-4.169 1.594C25.749 4.794 24.043 4 22.155 4c-3.625 0-6.563 2.938-6.563 6.563 0 .512.056 1.012.169 1.494-5.456-.275-10.294-2.888-13.531-6.862-.563.969-.887 2.1-.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-.031-2.087-.331-2.975-.819v.081c0 3.181 2.263 5.838 5.269 6.437-.55.15-1.131.231-1.731.231-.425 0-.831-.044-1.237-.119.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-.531 0-1.05-.031-1.569-.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-.287-.006-.569-.019-.85 1.281-.919 2.394-2.075 3.275-3.394z" />
+						</svg>
+					</a>
+
+					<a class="ba-contacts__logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 32 32">
+							<path
+								d="M16 2.881c4.275 0 4.781.019 6.462.094 1.563.069 2.406.331 2.969.55.744.288 1.281.638 1.837 1.194.563.563.906 1.094 1.2 1.838.219.563.481 1.412.55 2.969.075 1.688.094 2.194.094 6.463s-.019 4.781-.094 6.463c-.069 1.563-.331 2.406-.55 2.969-.288.744-.637 1.281-1.194 1.837-.563.563-1.094.906-1.837 1.2-.563.219-1.413.481-2.969.55-1.688.075-2.194.094-6.463.094s-4.781-.019-6.463-.094c-1.563-.069-2.406-.331-2.969-.55-.744-.288-1.281-.637-1.838-1.194-.563-.563-.906-1.094-1.2-1.837-.219-.563-.481-1.413-.55-2.969-.075-1.688-.094-2.194-.094-6.463s.019-4.781.094-6.463c.069-1.563.331-2.406.55-2.969.288-.744.638-1.281 1.194-1.838.563-.563 1.094-.906 1.838-1.2.563-.219 1.412-.481 2.969-.55 1.681-.075 2.188-.094 6.463-.094zM16 0c-4.344 0-4.887.019-6.594.094-1.7.075-2.869.35-3.881.744-1.056.412-1.95.956-2.837 1.85-.894.888-1.438 1.781-1.85 2.831C.444 6.538.169 7.7.094 9.4.019 11.113 0 11.656 0 16s.019 4.887.094 6.594c.075 1.7.35 2.869.744 3.881.413 1.056.956 1.95 1.85 2.837.887.887 1.781 1.438 2.831 1.844 1.019.394 2.181.669 3.881.744 1.706.075 2.25.094 6.594.094s4.888-.019 6.594-.094c1.7-.075 2.869-.35 3.881-.744 1.05-.406 1.944-.956 2.831-1.844s1.438-1.781 1.844-2.831c.394-1.019.669-2.181.744-3.881.075-1.706.094-2.25.094-6.594s-.019-4.887-.094-6.594c-.075-1.7-.35-2.869-.744-3.881-.394-1.063-.938-1.956-1.831-2.844-.887-.887-1.781-1.438-2.831-1.844-1.019-.394-2.181-.669-3.881-.744-1.712-.081-2.256-.1-6.6-.1z" />
+							<path
+								d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zm0 13.55c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331S18.944 21.331 16 21.331zM26.462 7.456c0 1.06-.859 1.919-1.919 1.919s-1.919-.859-1.919-1.919.859-1.919 1.919-1.919 1.919.859 1.919 1.919z" />
+						</svg>
+					</a>
+				</div>
+				<!-- /.ba-contacts -->
+			</div>
+		</div>
+		<!-- /.ba-container -->
+	</header>
+	<!-- /.ba-header -->
+
+	<main>
+		<section class="ba-section ba-section--presentation">
+			<div class="ba-header-slider">
+				<article class="ba-presentation__slide" style="background-image: url(img/presentation-bg.jpg);">
+					<h1 class="ba-presentation__header">
+						Simple & mordern
+					</h1>
+					<!-- /.ba-presentation__header -->
+
+					<p class="ba-presentation__subscribe">
+						We make the world's beautiful every day
+					</p>
+					<!-- /.ba-presentation__subscribe -->
+				</article>
+				<!-- /.ba-presentation__article -->
+
+				<article class="ba-presentation__slide" style="background-image: url(img/presentation-bg2.jpg);">
+					<h2 class="ba-presentation__header">
+						Hard & snotty
+					</h2>
+					<!-- /.ba-presentation__header -->
+
+					<p class="ba-presentation__subscribe">
+						We make the world's disgusting every day
+					</p>
+					<!-- /.ba-presentation__subscribe -->
+				</article>
+				<!-- /.ba-presentation__article -->
+
+				<article class="ba-presentation__slide" style="background-image: url(img/presentation-bg.jpg);">
+					<h2 class="ba-presentation__header">
+						Simple & mordern
+					</h2>
+					<!-- /.ba-presentation__header -->
+
+					<p class="ba-presentation__subscribe">
+						We make the world's beautiful every day
+					</p>
+					<!-- /.ba-presentation__subscribe -->
+				</article>
+				<!-- /.ba-presentation__article -->
+
+				<article class="ba-presentation__slide" style="background-image: url(img/presentation-bg2.jpg);">
+					<h2 class="ba-presentation__header">
+						Hard & snotty
+					</h2>
+					<!-- /.ba-presentation__header -->
+
+					<p class="ba-presentation__subscribe">
+						We make the world's disgusting every day
+					</p>
+					<!-- /.ba-presentation__subscribe -->
+				</article>
+				<!-- /.ba-presentation__article -->
+
+				<article class="ba-presentation__slide" style="background-image: url(img/presentation-bg.jpg);">
+					<h2 class="ba-presentation__header">
+						Simple & mordern
+					</h2>
+					<!-- /.ba-presentation__header -->
+
+					<p class="ba-presentation__subscribe">
+						We make the world's beautiful every day
+					</p>
+					<!-- /.ba-presentation__subscribe -->
+				</article>
+				<!-- /.ba-presentation__article -->
+
+				<ul class="ba-slick-dots">
+				</ul>
+			</div>
+			<!-- /.ba-header-slider -->
+
+			<a href="#" class="ba-arrow-down">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+					<path d="M7.406 8.578L12 13.172l4.594-4.594L18 9.984l-6 6-6-6z" /></svg>
+			</a>
+		</section>
+		<!-- /.ba-section -->
+
+		<section class="ba-section ba-projects" id="projects">
+			<div class="ba-container">
+				<h2 class="ba-projects__header">
+					What we do
+				</h2>
+				<!-- /.ba-projects__header -->
+
+				<div class="ba-row ba-row--bottom">
+					<div class="ba-col-6">
+						<img class="ba-projects__img-left" src="img/projects/trade-center.jpg" alt="Trade center">
+					</div>
+					<!-- /.ba-p-img-left" -->
+
+					<div class="ba-col-6">
+						<article class="ba-p-content">
+							<p class="ba-p-content__supscribe">
+								One world
+							</p>
+							<!-- /.ba-p-content__supscribe -->
+
+							<h3 class="ba-p-content__header">
+								Trade center
+							</h3>
+							<!-- /.ba-p-content__header -->
+
+							<p class="ba-p-content__main">
+								Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
+								truth
+								is, our thoughts are very powerful.
+							</p>
+							<!-- /.ba-p-content__main -->
+
+							<a href="#" class="ba-button">
+								more details
+							</a> <!-- /.ba-button -->
+
+							<p class="ba-p-content__subscribe">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32">
+									<path fill="#2c4058"
+										d="M16 0C10.477 0 6 4.477 6 10c0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z" />
+								</svg>
+								New York City, United States - 1776 feet
+							</p>
+							<!-- /.ba-p-content__suoscribe -->
+						</article>
+						<!-- /.ba-project__content -->
+					</div>
+					<!-- /.ba-col-6 -->
+				</div>
+				<!-- /.ba-row -->
+
+
+				<div class="ba-row ba-row--bottom">
+					<div class="ba-col-6">
+						<article class="ba-p-content">
+							<p class="ba-p-content__supscribe">
+								International
+							</p>
+							<!-- /.ba-p-content__supscribe -->
+
+							<h3 class="ba-p-content__header">
+								Commerce center
+							</h3>
+							<!-- /.ba-p-content__header -->
+
+							<p class="ba-p-content__main">
+								Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition
+								and how a digital advertising network may help.
+							</p>
+							<!-- /.ba-p-content__main -->
+
+							<a href="#" class="ba-button">
+								more details
+							</a> <!-- /.ba-button -->
+
+							<p class="ba-p-content__subscribe">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32">
+									<path fill="#2c4058"
+										d="M16 0C10.477 0 6 4.477 6 10c0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z" />
+								</svg>
+								Hong Kong - 1588 Feet
+							</p>
+							<!-- /.ba-p-content__suoscribe -->
+						</article>
+						<!-- /.ba-project__content -->
+					</div>
+					<!-- /.ba-col-6 -->
+
+					<div class="ba-col-6">
+						<img class="ba-projects__img-right" src="img/projects/commercial-center.jpg" alt="Trade center">
+					</div>
+					<!-- /.ba-p-img-left" -->
+				</div>
+				<!-- /.ba-row -->
+			</div>
+			<!-- /.ba-container -->
+		</section>
+		<!-- /.ba-section -->
+
+
+		<section class="ba-section ba-news" id="news">
+			<h2 class="ba-news__header">
+				latest news
+			</h2>
+			<!-- /.ba-news__header -->
+
+			<div class="ba-slider-news">
+				<article class="ba-news__article">
+					<img src="img/news/news1.jpg" alt="Unmatched beauty of the great">
+					<h3 class="ba-n-article__header">
+						See The Unmatched Beauty Of The Great. Lakes.
+					</h3>
+					<!-- /.ba-n-article__header -->
+
+					<p class="ba-n-article__content">
+						Free directories: directories are perfect for customers that are... searching for
+					</p>
+					<!-- /.ba-n-article__content -->
+				</article>
+				<!-- /.ba-news__article -->
+			</div>
+			<!-- /.ba-slider-news -->
+		</section>
+		<!-- /.ba-section -->
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

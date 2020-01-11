@@ -1,0 +1,43 @@
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "fonts";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 18px/1.66 "Open Sans", sans-serif;
+  color: #4b5562;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1230px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ba-button {
+  min-width: 190px;
+  line-height: 50px;
+  color: #2c4058;
+  font-family: "GothamBook";
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-color: #2c4058;
+}
+
+@import "header";
+@import "presentation";
+@import "projects";

@@ -1,0 +1,82 @@
+.ba-header {
+  padding-top: 53px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.ba-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ba-nav {
+  width: 50.85%;
+}
+
+.ba-nav__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  li {
+    padding: 24px;
+    list-style: none;
+    color: #ffffff;
+    position: relative;
+  }
+}
+
+.ba-nav__item {
+  font-family: "GothamBook", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    border: 1px solid #ffffff;
+    width: 9px;
+    height: 9px;
+    border-radius: 4px;
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover,
+  &:focus {
+    &:before {
+      background-color: #fff;
+    }
+  }
+}
+
+.ba-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13.76%;
+}
+
+.ba-contacts__logo {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  opacity: 0.4;
+  border-radius: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+
+  svg {
+    fill: #fff;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

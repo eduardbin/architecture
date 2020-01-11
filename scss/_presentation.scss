@@ -1,0 +1,94 @@
+.ba-presentation__slide {
+  padding-top: 370px;
+  padding-bottom: 319px;
+  text-align: center;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ba-presentation__header {
+  color: #ffffff;
+  font-family: Gotham;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 39px;
+}
+
+.ba-presentation__subscribe {
+  color: #ffffff;
+  font-family: "GothamBook";
+  line-height: 22px;
+  letter-spacing: 5.4px;
+}
+
+.ba-header-slider {
+  position: relative;
+}
+
+.ba-slick-dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25.62%;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  li {
+    list-style: none;
+
+    button {
+      width: 9px;
+      height: 9px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background-color: transparent;
+      line-height: 0;
+      font-size: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.slick-active button {
+      background-color: #fff;
+    }
+  }
+}
+
+.ba-section--presentation {
+  position: relative;
+}
+
+.ba-arrow-down {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  opacity: 0.7;
+  position: absolute;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 8px;
+
+  svg {
+    opacity: 0.7;
+    fill: #fff;
+  }
+
+  &:hover {
+    opacity: 1;
+
+    svg {
+      opacity: 1;
+    }
+  }
+}
